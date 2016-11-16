@@ -2726,11 +2726,13 @@ LGAlertViewType;
 
     // -----
 
+    _scrollView.transform = CGAffineTransformIdentity;
     _scrollView.frame = scrollViewFrame;
     _scrollView.transform = scrollViewTransform;
     _scrollView.alpha = scrollViewAlpha;
 
     CGFloat borderWidth = _layerBorderWidth;
+    _styleView.transform = CGAffineTransformIdentity;
     _styleView.frame = CGRectMake(scrollViewFrame.origin.x-borderWidth, scrollViewFrame.origin.y-borderWidth, scrollViewFrame.size.width+borderWidth*2, scrollViewFrame.size.height+borderWidth*2);
     _styleView.transform = scrollViewTransform;
     _styleView.alpha = scrollViewAlpha;
